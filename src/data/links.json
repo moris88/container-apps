@@ -1,0 +1,44 @@
+{
+  "links": [
+    {
+      "id": "todo-list",
+      "label": "ToDo List",
+      "url": "https://todolist.mauriziotolomeo.it/"
+    },
+    {
+      "id": "pdf-merged",
+      "label": "PDF Merged",
+      "url": "https://pdf-merged.mauriziotolomeo.it/"
+    },
+    {
+      "id": "invoice-generator",
+      "label": "Invoice Generator",
+      "url": "https://invoice-generator.mauriziotolomeo.it/"
+    },
+    {
+      "id": "journaling",
+      "label": "Journaling",
+      "url": "https://journaling.mauriziotolomeo.it/"
+    },
+    {
+      "id": "ai-estimator",
+      "label": "AI Estimator",
+      "url": "https://ai-estimator.mauriziotolomeo.it/"
+    },
+    {
+      "id": "json-formatter",
+      "label": "JSON Formatter",
+      "url": "https://json-formatter.mauriziotolomeo.it/"
+    },
+    {
+      "id": "sentai",
+      "label": "Sentai",
+      "url": "https://sentai.mauriziotolomeo.it/"
+    },
+    {
+      "id": "deluge-editor",
+      "label": "Deluge Editor",
+      "url": "https://deluge-editor.mauriziotolomeo.it/"
+    }
+  ]
+}
