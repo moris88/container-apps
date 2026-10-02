@@ -1,6 +1,11 @@
 {
   "links": [
     {
+      "id": "schedule-week",
+      "label": "Schedule Week",
+      "url": "https://schedule-week.mauriziotolomeo.it/"
+    },
+    {
       "id": "todo-list",
       "label": "ToDo List",
       "url": "https://todolist.mauriziotolomeo.it/"
