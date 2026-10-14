@@ -1,4 +1,38 @@
-# React + TypeScript + Vite
+# My Personal Apps
+
+## Gestione link
+
+- Apri **Gestisci link** per aggiungere label e URL HTTP/HTTPS. Ogni nuovo link riceve un ID casuale.
+- Elimina i link con il cestino e modifica l'ordine con le frecce oppure trascinando le tab.
+- Link, ordine e tab selezionata vengono salvati nel localStorage del browser. Il file `src/data/links.json` viene usato solo come configurazione iniziale, quando non esiste una lista salvata; una lista vuota resta vuota.
+- **Esporta JSON** scarica tutti i link nell'ordine corrente. **Importa JSON** valida il file e, dopo conferma, sostituisce l'intera lista. Un file non valido non modifica i dati esistenti.
+- I dati restano locali al browser e all'origine del sito: usa l'esportazione per backup o trasferimenti. Alcuni siti impediscono il caricamento in iframe; il loro URL resta apribile dal pannello di gestione.
+
+Formato JSON (accettato anche come array senza l'oggetto esterno):
+
+```json
+{
+  "links": [
+    {
+      "id": "example",
+      "label": "Example",
+      "url": "https://example.com/"
+    }
+  ]
+}
+```
+
+Gli ID sono facoltativi in importazione: quelli mancanti vengono generati. Gli ID presenti devono essere stringhe non vuote e univoche. Per importare una lista vuota usa `{ "links": [] }`.
+
+## Sviluppo
+
+```sh
+pnpm install
+pnpm dev
+pnpm build
+```
+
+## React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
