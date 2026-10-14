@@ -102,7 +102,9 @@ function useHorizontalScroll<T extends HTMLElement>(deps: unknown[] = []) {
     ro.observe(el)
 
     // Osserva anche i figli per reagire a cambi di contenuto
-    Array.from(el.children).forEach((child) => ro.observe(child))
+    Array.from(el.children).forEach((child) => {
+      ro.observe(child)
+    })
 
     return () => {
       el.removeEventListener('scroll', update)
@@ -161,6 +163,9 @@ const ScrollArrow: React.FC<{
       strokeLinecap="round"
       strokeLinejoin="round"
     >
+      <title>
+        {direction === 'left' ? 'Scorri a sinistra' : 'Scorri a destra'}
+      </title>
       {direction === 'left' ? (
         <polyline points="15 18 9 12 15 6" />
       ) : (
